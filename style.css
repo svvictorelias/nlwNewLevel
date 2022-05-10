@@ -144,8 +144,7 @@ section .content p {
   fill: var(--primary-color);
 }
 
-button.open-menu path[stroke*='#00856F'],
-#contact li path {
+button.open-menu path[stroke*='#00856F']{
   stroke: var(--primary-color);
 }
 
@@ -409,10 +408,10 @@ body.menu-expanded button path {
 
 #contact ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.6rem;
 
-  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
 }
 
 #contact ul li {
@@ -420,6 +419,7 @@ body.menu-expanded button path {
   align-items: center;
   gap: 0.8rem;
 }
+
 
 /*=== FOOTER =================================*/
 footer {
