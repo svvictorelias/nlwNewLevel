@@ -6,7 +6,7 @@
 }
 
 :root {
-  --hue: 190;
+  --hue: 285;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -140,7 +140,7 @@ section .content p {
   fill: var(--brand-light);
 }
 
-#navigation .logo path[fill*='#00856F'],
+
 #backToTopButton circle {
   fill: var(--primary-color);
 }
@@ -150,10 +150,6 @@ button.open-menu path[stroke*='#00856F'],
   stroke: var(--primary-color);
 }
 
-body.menu-expanded #navigation .logo path,
-#navigation.scroll .logo path {
-  fill: white;
-}
 
 #navigation.scroll button.open-menu path[stroke*='#00856F'] {
   stroke: white;
@@ -281,9 +277,6 @@ body.menu-expanded button {
   z-index: 100;
 }
 
-body.menu-expanded .logo path {
-  fill: white;
-}
 
 body.menu-expanded button path {
   stroke: white;
@@ -355,7 +348,9 @@ body.menu-expanded button path {
   align-items: center;
   justify-content: center;
 }
-
+.wrapper .logo img{
+  width: 70%;
+}
 #home .stat p {
   margin: 0;
   color: var(--primary-color);
@@ -441,14 +436,6 @@ footer .logo {
   margin-bottom: 2.4rem;
 }
 
-footer .logo svg {
-  width: 23.6rem;
-  height: 3.1rem;
-}
-
-footer .logo path {
-  fill: white;
-}
 
 footer p {
   color: var(--brand-beige);
