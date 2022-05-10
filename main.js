@@ -29,6 +29,22 @@ function activateMenuAtCurrentSection(section){
   }
 }
 
+let valueDisplays = document.querySelectorAll('.numCount')
+let interval = 4000
+
+valueDisplays.forEach((valueDisplay)=>{
+  let startValue = 0
+  let endValue = parseInt(valueDisplay.getAttribute('data-val'))
+  let duration = Math.floor(interval/endValue)
+  let counter = setInterval(function(){
+    startValue += 1
+    valueDisplay.textContent = `+${startValue}`
+    if(startValue == endValue){
+      clearInterval(counter)
+    }
+  }, duration)
+})
+
 function showNavOnScroll(){
   if(scrollY>3){
     navigation.classList.add('scroll')
@@ -66,22 +82,3 @@ ScrollReveal({
 #about,
 #about header,
 #about .content`);
-
-
-
-let valueDisplays = document.querySelectorAll('.numCount')
-let interval = 4000
-
-valueDisplays.forEach((valueDisplay)=>{
-  let startValue = 0
-  let endValue = parseInt(valueDisplay.getAttribute('data-val'))
-  let duration = Math.floor(interval/endValue)
-  let counter = setInterval(function(){
-    startValue += 1
-    valueDisplay.textContent = `+${startValue}`
-    if(startValue == endValue){
-      clearInterval(counter)
-    }
-  }, duration)
-  console.log(endValue)
-})

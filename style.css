@@ -140,7 +140,6 @@ section .content p {
   fill: var(--brand-light);
 }
 
-
 #backToTopButton circle {
   fill: var(--primary-color);
 }
@@ -149,7 +148,6 @@ button.open-menu path[stroke*='#00856F'],
 #contact li path {
   stroke: var(--primary-color);
 }
-
 
 #navigation.scroll button.open-menu path[stroke*='#00856F'] {
   stroke: white;
@@ -277,7 +275,6 @@ body.menu-expanded button {
   z-index: 100;
 }
 
-
 body.menu-expanded button path {
   stroke: white;
 }
@@ -326,8 +323,8 @@ body.menu-expanded button path {
   padding-block: 4rem;
   margin-inline: auto;
 
-  background-color: var(--brand-beige);
-  border: 1px solid var(--brand-light);
+  background-color: white;
+  border: 2px solid var(--brand-light);
   border-radius: 0.6rem;
 
   display: flex;
@@ -343,12 +340,12 @@ body.menu-expanded button path {
 
   margin-bottom: 0.4rem;
 }
-.textCount{
+.textCount {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.wrapper .logo img{
+.wrapper .logo img {
   width: 70%;
 }
 #home .stat p {
@@ -386,7 +383,7 @@ body.menu-expanded button path {
 /*=== ABOUT =================================*/
 #about {
   text-align: left;
-  background-color: var(--brand-beige);
+  background-color: var(--brand-light);
 }
 
 #about header h2 {
@@ -396,6 +393,9 @@ body.menu-expanded button path {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+}
+#nlwTeacher {
+  border-radius: 1rem;
 }
 
 /*=== CONTACT =================================*/
@@ -435,7 +435,6 @@ footer .logo {
   display: inline-block;
   margin-bottom: 2.4rem;
 }
-
 
 footer p {
   color: var(--brand-beige);
@@ -717,7 +716,7 @@ footer .social-links {
   footer {
     padding-block: 8rem;
   }
-  
+
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
@@ -727,13 +726,12 @@ footer .social-links {
     align-self: center;
   }
 
-
   footer .col-b {
     align-self: center;
     justify-self: flex-end;
   }
 
   footer p {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 }
